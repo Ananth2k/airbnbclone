@@ -17,7 +17,7 @@ function Header() {
           <div className="my-4 pe-5" ><Airbnblogo/></div>
           <Tab />
           
-          <div className="my-4 login-section">
+          <div className="d-none d-lg-block my-4 login-section">
             <div className="align-items-center d-flex">
               <div >
                 <p className="fw-semibold me-2 m-0">Become a Host</p></div>

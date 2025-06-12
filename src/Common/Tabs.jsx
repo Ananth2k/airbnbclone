@@ -31,7 +31,7 @@ window.addEventListener("scroll",handleScroll);
   },[]);
 
     return(
-      <div  className={`tabs-section pb-3`}>
+      <div  className={`d-none d-lg-block tabs-section pb-3`}>
         <div className={`justify-content-center ${scrolled ? "scrolled slide-top" : "slide-bottom"} tabs fs-6 gap-4 align-items-center`}>
           {["Homes","Experiences","Services"].map((tab) => (
             <div 
