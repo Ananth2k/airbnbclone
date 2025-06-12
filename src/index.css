@@ -77,7 +77,6 @@ font-size: 14px;
   font-size: 12px;
 }
 .home-card-img{  
-    max-width: 300px;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -241,8 +240,45 @@ font-size: 14px;
     width: 1px;
     right: 0;
 }
+
 .grid-card{
   display: grid;
+  grid-gap: 10px;
+}
+@media (min-width: 350px) {
+   .grid-card{
+  grid-template-columns:repeat(2, auto);
+ }
+}
+@media (min-width: 576px) {
+   .grid-card{
+  grid-template-columns:repeat(3, auto);
+ }
+}
+
+@media (min-width: 768px) {
+  .grid-card{
+  grid-template-columns:repeat(4, auto);
+ }
+}
+
+@media (min-width: 992px) {
+ .grid-card{
+  grid-template-columns:repeat(5, auto);
+ }
+
+}
+
+@media (min-width: 1200px) {
+ .grid-card{
   grid-template-columns:repeat(6, auto);
-      grid-gap: 10px;
+
+}
+}
+
+@media (min-width: 1400px) {
+ .grid-card{
+  grid-template-columns:repeat(7, auto);
+   
+}
 }
