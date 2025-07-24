@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SearchBar from "./SearchBar";
+import SearchDropDown from "./searchDropDown/SearchDropDown";
 function Tab(){
   const [activeTab, setActiveTab] = useState("Homes");
   const [scrolled, setScrolled] = useState(false);
@@ -43,7 +44,18 @@ window.addEventListener("scroll",handleScroll);
             </div>
           ))}
         </div>
-        <SearchBar scrolled={scrolled}/>
+        <div className="position-relative">
+          <SearchBar scrolled={scrolled}/>
+          {scrolled ?(
+            null
+          ):(
+<SearchDropDown /> 
+// null
+          )
+          
+        }
+        </div>
+        
 </div>
 
     )

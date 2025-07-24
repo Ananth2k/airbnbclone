@@ -1,0 +1,33 @@
+$font-size-12px: 12px;
+$text-secondary: #6c6c6c;
+
+.search-drop-down{
+position: absolute;
+top: 100%;
+height: auto;
+width: 100%;
+margin-top: 12px;
+
+}
+.search-location{
+    width: 48%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+   
+        .scroll{
+ max-height: calc(100vh - 300px);
+        overflow-y: scroll;
+        }
+p{
+    margin-bottom: 0;
+    font-size: $font-size-12px;
+}
+
+h5,ul p{
+   font-size: 14px;
+}
+ul img{
+     width: 60px;
+    height: 60px;
+    border-radius: 5%;
+}
+}
