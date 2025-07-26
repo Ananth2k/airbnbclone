@@ -32,7 +32,7 @@ function Home() {
         <div className="grid-card">
           
           {cardsData.map((card) => (
-            <div>
+            <div key={card.id} >
             <div key={card.id} lg={2} className="position-relative">
               <div className="fav-svg">
                  <svg   

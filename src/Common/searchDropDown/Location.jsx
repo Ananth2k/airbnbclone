@@ -1,11 +1,14 @@
 import React from 'react'
 
-function Location() {
+function Location({isLocation,onToggleLocation}) {
 
 const cities = ['Madurai', 'Chennai', 'Bangalore', 'Delhi', 'Mumbai', 'Kolkata', 'Hyderabad', 'Pune', 'Ahmedabad', 'Jaipur'];
 
   return (
-    <div className='bg-white p-2 rounded-4 search-location'>
+    <>
+     {
+        isLocation?(
+            <div className='bg-white p-2 rounded-4 search-location'>
        
         <div className='p-4 scroll'>
              <p >Suggested destinations</p>
@@ -30,6 +33,15 @@ const cities = ['Madurai', 'Chennai', 'Bangalore', 'Delhi', 'Mumbai', 'Kolkata',
         
         
     </div>
+
+        ):(
+            null
+        )
+    }
+    
+
+    </>
+   
   )
 }
 

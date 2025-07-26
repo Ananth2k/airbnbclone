@@ -1,19 +1,19 @@
 import React from 'react'
 
-function SearchBar({scrolled}) {
+function SearchBar({scrolled,isLocation,onToggleLocation}) {
   return (
     <div className={`my-3 d-flex justify-content-between align-items-center border bg-white search-bar position-relative ${scrolled ? "search-scrolled " : "slide-bottom"}`}>
        {scrolled 
        ?(
 
-        <div className={`px-3 border-left-before`}>
+        <div onClick={onToggleLocation} className={`px-3 border-left-before`} >
           <h2  className="fs-7 fw-semibold mb-0">Any Where</h2>
         </div>
 
        ) 
        :(
 
-        <div className={`p-2 px-4 border-left-after-1`}>
+        <div  onClick={onToggleLocation} className={`p-2 px-4 border-left-after-1`}>
           <h2  className="fs-7 fw-semibold mb-0">Where</h2>
           <input className="fs-6 border-0 text-muted" placeholder='Search destination'/>
         </div>

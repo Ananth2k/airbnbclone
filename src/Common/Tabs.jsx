@@ -5,6 +5,11 @@ function Tab(){
   const [activeTab, setActiveTab] = useState("Homes");
   const [scrolled, setScrolled] = useState(false);
   const [scrollBottom, setScrollBottom] = useState(false);
+  const [location, setLocation] = useState(false);
+
+  const handleLocation = () =>{
+    setLocation(prev=>!prev)
+  }
 
   useEffect(()=>{
 
@@ -45,12 +50,11 @@ window.addEventListener("scroll",handleScroll);
           ))}
         </div>
         <div className="position-relative">
-          <SearchBar scrolled={scrolled}/>
+          <SearchBar isLocation={location} onToggleLocation={handleLocation} scrolled={scrolled}/>
           {scrolled ?(
             null
           ):(
-//<SearchDropDown /> 
-null
+<SearchDropDown isLocation={location} onToggleLocation={handleLocation}/> 
           )
           
         }
