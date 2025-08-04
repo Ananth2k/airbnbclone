@@ -44,7 +44,7 @@ window.addEventListener("scroll",handleScroll);
             key={tab}
             className={`d-flex align-items-center tab pointer py-2 fw-semibold ${activeTab === tab ? "activetab" : "text-muted"}`}
             onClick={()=>setActiveTab(tab)} >
-              <img src={`/${tab}${activeTab === tab ? "active" : ""}.png`} />                         
+              <img alt={tab} src={`/${tab}${activeTab === tab ? "active" : ""}.png`} />                         
               <span className="mx-1">{tab}</span>
             </div>
           ))}
