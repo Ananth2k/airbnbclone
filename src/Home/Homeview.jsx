@@ -42,7 +42,7 @@ function Home() {
               
               </div>
               <img
-                src={`/dummy-img${card.image}.png`}
+                src={`/dummy-img${card.image}.webp`}
                 alt={`dummy-${card.id}`}
                 className="home-card-img"
               />
